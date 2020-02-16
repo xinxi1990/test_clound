@@ -1,5 +1,67 @@
-site_name: 开发文档库
-copyright: Copyright &copy; 2018 <a href="http://gisfly.xyz">gis fly</a>.
-theme: 
+copyright: Copyright &copy; 2020 <a href="http://gisfly.xyz">gis fly</a>.
+theme:
   name: 'material'
 
+# Project information
+site_name: 测试开发技术文档库
+site_description: Tester User Documentation
+site_author: 'xinxi'
+
+# Configuration
+theme:
+    name: 'material'
+    language: 'zh'
+    palette:
+        primary: 'indigo'
+        accent: 'indigo'
+    font:
+        text: 'Roboto'
+        code: 'Roboto Mono'
+
+# Repository
+repo_name: xinxi1990
+repo_url: https://github.com/xinxi1990
+edit_uri: ""
+
+# Google Analytics
+google_analytics:
+    - 'UA-114587036-2'
+    - 'auto'
+
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+
+
+# index pages
+nav:
+    - 介绍: index.md
+    - java:
+        - 展位块: run-tests/cli.md
+        - 展位块: run-tests/report.md
+        - 展位块: run-tests/load-test.md
+    - python:
+        - 展位块: run-tests/cli.md
+        - 展位块: run-tests/report.md
+        - 展位块: run-tests/load-test.md
+#     - java:
+#        - 展位块: run-tests/cli.md
+#        - 展位块: run-tests/report.md
+#        - 展位块: run-tests/load-test.md
+
+#    - 接口测试: run-tests/load-test.md
+#        - postman: run-tests/load-test.md
+        #- python request: run-tests/load-test.md
+#    - jenkins: run-tests/load-test.md
+#    - jmeter: FAQ.md
+#    - 相关资料: related-docs.md
+#    - CHANGELOG: CHANGELOG.md
+
+extra_javascript:
+  - 'js/slardar.js'
